@@ -72,7 +72,7 @@ export class News extends Component {
         let data = await fetch(url);
         let parsedData = await data.json()
         this.setState({
-            articles: this.state.articles.concat (parsedData.articles),
+            articles: this.state.articles.concat(parsedData.articles),
             totalResults: parsedData.totalResults
         })
     };
@@ -91,13 +91,13 @@ export class News extends Component {
                     loader={<Spinnner />}>
 
                     <div className="container">
-                    <div className="row">
-                        {this.state.articles.map((element) => {
-                            return <div className="col-md-4" key={element.url}>
-                                <NewsItem title={element.title ? element.title : ""} description={element.description ? element.description : ""} imageUrl={element.urlToImage} newsUrl={element.url} author={element.author} date={element.publishedAt} source={element.source.name} />
-                            </div>
-                        })}
-                    </div>
+                        <div className="row">
+                            {this.state.articles.map((element) => {
+                                return <div className="col-md-4" key={element.url}>
+                                    <NewsItem title={element.title ? element.title : ""} description={element.description ? element.description : ""} imageUrl={element.urlToImage} newsUrl={element.url} author={element.author} date={element.publishedAt} source={element.source.name} />
+                                </div>
+                            })}
+                        </div>
                     </div>
 
                 </InfiniteScroll>

@@ -20,21 +20,21 @@ export default class App extends Component {
   }
 
   setProgress = (progress) => {
-    this.setState({progress: progress})
+    this.setState({ progress: progress })
   }
 
   render() {
     return (
       <div>
         {/* This is {this.a} */}
-        <Router>
 
+        <Router>
           <Navbar />
           {/* <News category="general" heading="Top Headlines" country="in" pageSize={this.pageSize} /> */}
 
           {/* Top loader */}
           <LoadingBar
-            height= {3}
+            height={3}
             color='#f11946'
             progress={this.state.progress}
           />

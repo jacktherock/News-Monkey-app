@@ -13,7 +13,7 @@ export class NewsItem extends Component {
                     <div style={{
                         display: 'flex',
                         justifyContent: 'flex-end',
-                        position:'absolute',
+                        position: 'absolute',
                         right: 0
                     }}>
                         <span className="badge rounded-pill bg-danger">
