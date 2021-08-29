@@ -1,9 +1,11 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# my files
+# my files and folders
 categories.txt
 sampleOutput.json
 News.js Theory.txt
+/Class Based Components Theory
+/Function Based Components Theory
 
 # dependencies
 /node_modules
